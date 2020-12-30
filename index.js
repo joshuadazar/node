@@ -1,11 +1,11 @@
 const express= require('express')
 const app = express()
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(__dirname+"/index.html");
 })
 
 app.listen(3000, () => {
     
-    console.log('server en puerto 3000');
+    console.log('server en puerto 3000 y seguirá');
 })
